@@ -12,3 +12,7 @@ angular.module('myApp.view1', ['ngRoute'])
 .controller('View1Ctrl', [function() {
 
 }]);
+var vid = document.getElementById("aud");
+vid.addEventListener("pause", function() {
+    window.alert("The video has been paused");
+});
